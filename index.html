@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="gu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Chili Agro Farm | ચીલી એગ્રો ફાર્મ - Official Video Showcase</title>
+  <meta name="description" content="Chili Agro Farm (ચીલી એગ્રો ફાર્મ) - ખેતરથી સીધા કેમેરાની નજરે: વાવણીથી લણણી સુધીના ઓરિજિનલ મરચાં ખેતી વિડિયો.">
+  <meta name="theme-color" content="#050f09">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  
+  <!-- Favicon (Chilli SVG) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌶️</text></svg>">
+  
+  <!-- Google Fonts Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Sticky Navbar -->
+  <header class="navbar" id="topNavbar">
+    <div class="container nav-content">
+      <a href="#" class="brand" title="Chili Agro Farm">
+        <div class="brand-badge-icon">🌶️</div>
+        <div class="brand-details">
+          <h1>
+            <span data-i18n="brandName">Chili Agro Farm</span>
+            <span class="verified-badge">આધુનિક ખેતી</span>
+          </h1>
+          <p data-i18n="brandTagline">ચીલી એગ્રો ફાર્મ • ખેતર વિડિયો ગેલેરી</p>
+        </div>
+      </a>
+
+      <div class="nav-right-actions">
+        <!-- Farm Info Button -->
+        <button class="btn-farm-info" id="btnOpenFarmInfo" title="ફાર્મ વિશે માહિતી">
+          <span>🌿</span>
+          <span data-i18n="btnFarmInfo">ફાર્મ વિશે</span>
+        </button>
+
+        <!-- Language Switcher -->
+        <div class="lang-toggle-bar">
+          <button id="langGu" class="lang-btn active" title="ગુજરાતી">ગુજરાતી</button>
+          <button id="langEn" class="lang-btn" title="English">English</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="heroSection">
+    <div class="container">
+      <div class="hero-card">
+        <div class="hero-pill-badge">
+          <span class="live-pulse-dot"></span>
+          <span data-i18n="heroPill">🌱 આધુનિક ટપક સિંચાઈ પદ્ધતિ અને ખેતર દર્શન</span>
+        </div>
+
+        <h2 class="hero-heading" data-i18n="heroHeading">
+          Chili Agro Farm: વાવણીથી સમૃદ્ધ લણણી સુધીનું જીવંત દર્શન
+        </h2>
+        <p class="hero-desc" data-i18n="heroDesc">
+          ખેતરથી સીધા કેમેરાની નજરે: લીલા અને લાલ મરચાંના છોડની રોપણી, ફૂલ, ફાલ અને ભરપૂર ઉત્પાદનના તમામ ઓરિજિનલ ખેતર વિડિયોનું જીવંત દર્શન.
+        </p>
+
+        <!-- Metric Badges Row -->
+        <div class="hero-metrics">
+          <div class="metric-box">
+            <div class="metric-icon">📹</div>
+            <div>
+              <div class="metric-val" data-i18n="valVideos">૨૫ વિડિયો</div>
+              <div class="metric-lbl" data-i18n="lblVideos">કુલ ખેતર વિડિયો</div>
+            </div>
+          </div>
+
+          <div class="metric-box">
+            <div class="metric-icon">🌶️</div>
+            <div>
+              <div class="metric-val" data-i18n="valCrop">તીખાં લીલાં મરચાં</div>
+              <div class="metric-lbl" data-i18n="lblCrop">હાઇબ્રિડ અને દેશી જાત</div>
+            </div>
+          </div>
+
+          <div class="metric-box">
+            <div class="metric-icon">⚡</div>
+            <div>
+              <div class="metric-val">100% Mobile Ready</div>
+              <div class="metric-lbl" data-i18n="lblFast">ઝડપી લોડિંગ</div>
+            </div>
+          </div>
+
+          <div class="metric-box">
+            <div class="metric-icon">✨</div>
+            <div>
+              <div class="metric-val">HD 1080p</div>
+              <div class="metric-lbl" data-i18n="lblHd">સ્પષ્ટ HD ગુણવત્તા</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Clean Toolbar (No Filters - Direct Display of All Videos) -->
+  <section class="controls-container" id="controlsBar">
+    <div class="container">
+      <div class="controls-row">
+        <!-- Direct Status Counter -->
+        <div class="status-left" id="statusCounter">
+          <span>🌿</span>
+          <span data-i18n="allVideosHeading">તમામ ખેતર વિડિયો (૨૫)</span>
+        </div>
+
+        <!-- Action Toolbar: Play All & View Modes -->
+        <div class="toolbar-group">
+          <!-- Play All Button -->
+          <button class="btn-play-all" id="btnPlayAll">
+            <span>▶️</span>
+            <span data-i18n="btnPlayAll">બધા વિડિયો ક્રમશઃ જુઓ</span>
+          </button>
+
+          <!-- View Mode Toggles -->
+          <div class="view-mode-bar">
+            <button class="view-btn" data-view="reels" title="રીલ્સ / શોર્ટ્સ મોડ">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
+                <rect x="5" y="2" width="14" height="20" rx="3" fill="none" stroke="currentColor" stroke-width="2"/>
+                <path d="M10 9l5 3-5 3V9z"/>
+              </svg>
+            </button>
+            <button class="view-btn active" data-view="standard" title="ગ્રીડ મોડ">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="3" width="7" height="18"></rect>
+                <rect x="14" y="3" width="7" height="18"></rect>
+              </svg>
+            </button>
+            <button class="view-btn" data-view="compact" title="કોમ્પેક્ટ મોડ">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="3" width="7" height="7"></rect>
+                <rect x="14" y="3" width="7" height="7"></rect>
+                <rect x="14" y="14" width="7" height="7"></rect>
+                <rect x="3" y="14" width="7" height="7"></rect>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Video Gallery (All Videos Directly Displayed) -->
+  <main class="gallery-wrapper">
+    <div class="container">
+      <div class="video-grid" id="videoGrid">
+        <!-- Rendered by app.js -->
+      </div>
+    </div>
+  </main>
+
+  <!-- Cinema Video Player Modal -->
+  <div class="modal-backdrop" id="videoModal" role="dialog" aria-modal="true">
+    <div class="modal-theater">
+      <!-- Header -->
+      <div class="theater-header">
+        <div class="theater-heading">
+          <h2 id="modalTitle">Chili Agro Farm - વિડિયો દર્શન</h2>
+          <p id="modalSub">video_filename.mp4</p>
+        </div>
+        <div class="theater-top-tools">
+          <button class="btn-theater-tool" id="btnToggleLoop" title="રીપીટ વિડિયો (Loop)">🔁</button>
+          <button class="btn-theater-tool" id="btnTogglePip" title="Picture in Picture (પીપ મોડ)">⧉</button>
+          <button class="btn-theater-tool btn-theater-close" id="modalCloseBtn" title="બંધ કરો (Esc)">✕</button>
+        </div>
+      </div>
+
+      <!-- Player Screen -->
+      <div class="theater-screen">
+        <button class="theater-arrow left" id="prevVideoBtn" title="અગાઉનો વિડિયો (←)">◀</button>
+        <button class="theater-arrow right" id="nextVideoBtn" title="આગળનો વિડિયો (→)">▶</button>
+        
+        <video id="modalVideoPlayer" controls playsinline preload="metadata">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <!-- Footer -->
+      <div class="theater-footer">
+        <div class="theater-tags">
+          <span class="info-chip" id="modalDate">📅 તારીખ</span>
+          <span class="info-chip" id="modalDuration">⏱️ અવધિ</span>
+          <span class="info-chip" id="modalSize">💾 સાઇઝ</span>
+        </div>
+
+        <div class="theater-actions">
+          <a href="#" class="btn-share-whatsapp" id="btnShareWa" target="_blank" title="WhatsApp પર શેર કરો">
+            <span>💬</span> WhatsApp
+          </a>
+
+          <a href="#" class="btn-download-vid" id="modalDownload" download>
+            <span>⬇️</span>
+            <span data-i18n="btnDownload">ડાઉનલોડ</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Farm Details Modal -->
+  <div class="drawer-backdrop" id="farmInfoModal">
+    <div class="drawer-card">
+      <div class="drawer-header">
+        <h3><span>🌶️</span> <span data-i18n="infoModalTitle">Chili Agro Farm વિશે માહિતી</span></h3>
+        <button class="btn-theater-tool" id="btnCloseFarmInfo">✕</button>
+      </div>
+
+      <div class="drawer-details-grid">
+        <div class="drawer-detail-item">
+          <div class="lbl" data-i18n="lblFarmCrop">મુખ્ય પાક</div>
+          <div class="val">લીલાં અને લાલ મરચાં (Hybrid G-4 અને દેશી જાત)</div>
+        </div>
+        <div class="drawer-detail-item">
+          <div class="lbl" data-i18n="lblFarmIrrigation">સિંચાઈ પદ્ધતિ</div>
+          <div class="val">આધુનિક ટપક પદ્ધતિ (Drip Irrigation)</div>
+        </div>
+        <div class="drawer-detail-item">
+          <div class="lbl" data-i18n="lblFarmSeason">પાક મોસમ</div>
+          <div class="val">ચોમાસુ ૨૦૨૬ (જૂન થી સપ્ટેમ્બર)</div>
+        </div>
+        <div class="drawer-detail-item">
+          <div class="lbl" data-i18n="lblFarmSoil">જમીનનો પ્રકાર</div>
+          <div class="val">ફળદ્રુપ કાળી-ગોરાડુ માટી</div>
+        </div>
+      </div>
+
+      <p class="drawer-quote" data-i18n="farmQuote">
+        "Chili Agro Farm ની આ વેબસાઇટ પર દર્શાવેલ તમામ ૨૫ વિડિયો વાસ્તવિક ખેતરના છે. દરેક વિડિયો ૧૦૦MB થી ઓછી સાઇઝમાં ઉપલબ્ધ છે જેથી GitHub Pages પર ઝડપથી ચાલે."
+      </p>
+    </div>
+  </div>
+
+  <!-- Mobile Bottom Navigation Bar -->
+  <nav class="mobile-bottom-nav">
+    <button class="bottom-nav-item active" id="bnavHome">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+      </svg>
+      <span data-i18n="bnavHome">મુખપૃષ્ઠ</span>
+    </button>
+    <button class="bottom-nav-item" id="bnavReels">
+      <svg viewBox="0 0 24 24" fill="currentColor">
+        <rect x="5" y="2" width="14" height="20" rx="3" fill="none" stroke="currentColor" stroke-width="2"/>
+        <path d="M10 9l5 3-5 3V9z"/>
+      </svg>
+      <span data-i18n="bnavReels">રીલ્સ</span>
+    </button>
+    <button class="bottom-nav-item" id="bnavPlayAll">
+      <svg viewBox="0 0 24 24" fill="currentColor">
+        <path d="M8 5v14l11-7z"/>
+      </svg>
+      <span data-i18n="bnavPlayAll">પ્લે ઓલ</span>
+    </button>
+    <button class="bottom-nav-item" id="bnavInfo">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="12" cy="12" r="10"></circle>
+        <line x1="12" y1="16" x2="12" y2="12"></line>
+        <line x1="12" y1="8" x2="12.01" y2="8"></line>
+      </svg>
+      <span data-i18n="bnavInfo">ફાર્મ માહિતી</span>
+    </button>
+  </nav>
+
+  <!-- Footer -->
+  <footer class="footer-section">
+    <div class="container">
+      <p class="footer-quote" data-i18n="footerQuote">🌿 આપણી ધરતી, આપણી મહેનત, આપણાં સમૃદ્ધ મરચાં 🌶️</p>
+      <p class="footer-desc" data-i18n="footerDesc">
+        Chili Agro Farm (ચીલી એગ્રો ફાર્મ) - ખેતીની વાસ્તવિક પ્રગતિને વિશ્વ સમક્ષ પ્રસ્તુત કરતી ઓનલાઇન ડિજિટલ વિડિયો ગેલેરી.
+      </p>
+
+      <div class="footer-badges">
+        <span class="footer-chip">🚀 GitHub Pages Optimized</span>
+        <span class="footer-chip">📁 25 Authentic Field Videos</span>
+        <span class="footer-chip">⚡ WebP Instant Preview</span>
+        <span class="footer-chip">📱 Mobile-First Responsive</span>
+      </div>
+
+      <p class="footer-copyright" data-i18n="footerCopyright">
+        Chili Agro Farm • સર્વ હક્ક સુરક્ષિત © ૨૦૨૬
+      </p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="videos_data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
